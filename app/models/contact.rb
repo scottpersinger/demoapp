@@ -1,4 +1,4 @@
 class Contact < ActiveRecord::Base
   set_table_name :contact
-  # attr_accessible :title, :body
+  attr_protected :no_field_here
 end
