@@ -2,6 +2,11 @@ Skylabdemo::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  match '/accounts' => 'salesforce#accounts'
+  match '/account/:id' => 'salesforce#account'
+  match '/contacts' => 'salesforce#contacts'
+  match '/contact/:id' => 'salesforce#contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

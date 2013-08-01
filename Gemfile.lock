@@ -65,6 +65,7 @@ GEM
       actionpack (>= 3.0)
     has_scope (0.5.1)
     hike (1.2.3)
+    hirb (0.7.1)
     i18n (0.6.1)
     inherited_resources (1.4.0)
       has_scope (~> 0.5.0)
@@ -147,6 +148,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   coffee-script
+  hirb
   jquery-rails (= 2.3.0)
   pg
   rails (= 3.2.13)
