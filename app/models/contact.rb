@@ -1,6 +1,6 @@
 class Contact < SalesforceModel
   set_table_name :contact
-  belongs_to :account, :primary_key => 'sfId', :foreign_key => 'AccountId'
+  belongs_to :account, :primary_key => 'sfid', :foreign_key => 'accountid'
 
-  attr_protected :CreatedDate, :SystemModstamp, :LastModifiedDate
+  attr_protected :createddate, :systemmodstamp, :lastmodifieddate
 end
