@@ -2,6 +2,7 @@ Skylabdemo::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  match '/' => 'salesforce#accounts'
   match '/accounts' => 'salesforce#accounts'
   match '/account/:id' => 'salesforce#account'
   match '/contacts' => 'salesforce#contacts'

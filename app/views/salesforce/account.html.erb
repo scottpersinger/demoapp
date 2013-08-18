@@ -1,4 +1,10 @@
-<h1>Account: <%= @account.name %></h1>
+<h1>Account</h1>
+
+<% form_for @account do %>
+    <label>Name</label>
+    <%= text_field :name %>
+    <%= submit_tag 'Save' %>
+<% end %>
 
 <h2>Contacts</h2>
 <table border="1">
